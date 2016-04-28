@@ -38,11 +38,15 @@ $(document).ready(function() {
 	  slideWidth: 810
 	});
 
-		$('.utvar-slider').bxSlider({
+	$('.utvar-slider').bxSlider({
 	  minSlides: 2,
 	  maxSlides: 5,
 	  slideWidth: 163,
 	  slideMargin: 0,
 	  pager: false
 	});
+	  $('.enter').click(function(){
+	    $(this).next('.private-dropdown').slideToggle();
+	    return false
+	  });
 });

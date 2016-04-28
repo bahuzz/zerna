@@ -73,7 +73,7 @@ a:hover { text-decoration: none; }
 
 .private-cabinet { float: right; }
 
-.private-dropdown { position: absolute; right: 0; top: 30px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; background-color: #fff; -moz-box-shadow: 3px 4px 9px rgba(0, 0, 0, 0.4); -webkit-box-shadow: 3px 4px 9px rgba(0, 0, 0, 0.4); box-shadow: 3px 4px 9px rgba(0, 0, 0, 0.4); z-index: 100; padding: 15px 20px; }
+.private-dropdown { position: absolute; right: 0; top: 60px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; background-color: #fff; -moz-box-shadow: 3px 4px 9px rgba(0, 0, 0, 0.4); -webkit-box-shadow: 3px 4px 9px rgba(0, 0, 0, 0.4); box-shadow: 3px 4px 9px rgba(0, 0, 0, 0.4); z-index: 100; padding: 15px 20px; display: none; }
 
 .logo { background: url('../img/icons-s265da26873.png') 0 -296px no-repeat; width: 100px; height: 73px; text-indent: -9000px; display: inline-block; float: left; margin-right: 9px; }
 
