@@ -37,9 +37,19 @@ a {
 .fr {
 	float: right;
 }
+.italic {
+	font-style: italic;
+}
 
 ///////////////// colors ////////////////////
 $red: #a90c00;
+$green: #00ac00;
+.red {
+	color: $red;
+}
+.green {
+	color: $green;
+}
 ///////////////// buttons ////////////////////
 .red-btn {
 	background: $red;
@@ -52,6 +62,18 @@ $red: #a90c00;
 	font-size: 11px;
 	text-transform: uppercase;
 	border: none;
+	&:hover {
+		color: #FFF;
+	}
+}
+.grey-btn {
+	font-family: georgia;
+	text-transform: uppercase;
+	font-size: 17px;
+	padding: 10px 20px;
+	@include background-clip(padding-box);
+	background-color: #dbdbdb;
+	@include background-image(linear-gradient(bottom, rgba(180,180,180,.48) 0%, rgba(220,220,220,.48) 100%))
 }
 ///////////////// top-panel ////////////////////
 .top-panel {
@@ -123,11 +145,17 @@ $red: #a90c00;
 	float: left;
 	padding-top: 50px;
 	margin-right: 104px;
+	position: relative;
 }
 .search-form {
 	height: 29px;
 	border: 1px solid #D9D9D9;
 	width: 278px;
+	position: relative;
+	z-index: 101;
+	&.search-ext {
+		border-bottom: 1px solid #fff;
+	}
 }
 .search-btn {
 	@include s(search-icon);
@@ -153,6 +181,39 @@ $red: #a90c00;
 		color: #707070;
 	}
 }
+////////////////////////////  search-extended  ///////////////////////////
+.search-results {
+	position: absolute;
+	left: 0;
+	top: 78px;
+	background: #FFF;
+	border: 1px solid #d9d9d9;
+	z-index: 100;
+	width: 816px;
+	padding: 20px;
+	padding-right: 12px;
+	a {
+		color: #000;
+	}
+	li {
+		padding: 5px 7px;
+		position: relative;
+		left: -7px;
+		&:hover {
+			background: #ECECEC;
+		}
+	}
+}
+.srb-title {
+	margin-bottom: 10px !important;
+}
+.search-results-block {
+	margin-bottom: 15px;
+}
+.sr-inner {
+	height: 750px;
+}
+////////////////////////////  search-extended  ///////////////////////////
 .htel {
 	font-size: 23px;
 	font-weight: bold;
@@ -701,4 +762,137 @@ $red: #a90c00;
 	float: right;
 	cursor: pointer;
 	display: none;
+}
+.menu-btn-active {
+	@include s(menu-btn-active);
+	z-index: 103;
+	position: relative;
+}
+.mobile-dropmenu {
+	display: none;
+}
+///////////////// modal /////////////////
+.box-modal {
+	width: 100%;
+	min-width: 430px;
+	max-width: 430px;
+	background: #FFF;
+	padding: 20px;
+	position: relative;
+	font-size: 15px;
+	padding-top: 40px;
+	-webkit-box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+	        box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+}
+.arcticmodal-close {
+	display: inline-block;
+	@include s(modal-close);
+	text-indent: -9000px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+.modal-title {
+	font-size: 30px;
+	font-family: georgia;
+	margin-bottom: 25px;
+	line-height: 1em;
+}
+.form-control {
+	height: 49px;
+	-webkit-border-radius: 0;
+	        border-radius: 0;
+}
+.form-group {
+	margin-bottom: 30px;
+}
+.form-bot {
+	margin-bottom: 15px;
+}
+.form-label {
+		margin-bottom: 10px;
+	}
+.big-btn {
+	height: 49px;
+	line-height: 48px;
+	-webkit-border-radius: 2px;
+	        border-radius: 2px;
+	font-size: 17px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.auth-pass {
+	padding-right: 70px;
+}
+.auth-info-block {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.aib-img {
+	float: left;
+	margin-right: 10px;
+}
+.aib-text {
+	margin-left: 50px;
+}
+.auth-welcome {
+	font-size: 25px;
+	margin-bottom: 25px;
+	font-family: georgia;
+}
+.textarea {
+	height: 110px;
+	padding: 10px;
+	border: 1px solid #D8D8D8;
+	width: 100%;
+	resize: none;
+}
+.r20 {
+	-webkit-border-radius: 20px;
+	        border-radius: 20px;
+}
+.textarea-label {
+	font-family: georgia;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.textarea {
+	margin-bottom: 15px;
+}
+.ya-map {
+	margin-bottom: 15px;
+	
+}
+.deliver-point {
+	font-family: georgia;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+.deliver-adress {
+	text-transform: uppercase;
+	font-family: georgia;
+	font-size: 17px;
+	margin-bottom: 15px;
+}
+.deliver-text {
+	p {
+		margin-bottom: 25px;
+	}
+}
+.success-add {
+	font-size: 27px;
+	font-family: georgia;
+	padding-left: 38px;
+	position: relative;
+	&:after {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 25%;
+		left: 0;
+		@include s(suc);
+	}
 }

@@ -49,4 +49,19 @@ $(document).ready(function() {
 	    $(this).next('.private-dropdown').slideToggle();
 	    return false
 	  });
+
+	 $('.sr-inner').mCustomScrollbar();
+
+	   $('.menu-btn').click(function(){
+	    $('.mobile-dropmenu').slideToggle();
+	    $(this).toggleClass('menu-btn-active');
+	  });
+
+	   $('#authModal').arcticmodal();
+	   $('#authSuccessModal').arcticmodal();
+	   $('#toOffer').arcticmodal();
+	   $('#toDelivery').arcticmodal();
+	   $('#toEdit').arcticmodal();
+	   $('#productAdded').arcticmodal();
+
 });
