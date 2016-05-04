@@ -57,11 +57,11 @@ $(document).ready(function() {
 	    $(this).toggleClass('menu-btn-active');
 	  });
 
-	   $('#authModal').arcticmodal();
-	   $('#authSuccessModal').arcticmodal();
-	   $('#toOffer').arcticmodal();
-	   $('#toDelivery').arcticmodal();
-	   $('#toEdit').arcticmodal();
-	   $('#productAdded').arcticmodal();
+	   // $('#authModal').arcticmodal();
+	   // $('#authSuccessModal').arcticmodal();
+	   // $('#toOffer').arcticmodal();
+	   // $('#toDelivery').arcticmodal();
+	   // $('#toEdit').arcticmodal();
+	   // $('#productAdded').arcticmodal();
 
 });

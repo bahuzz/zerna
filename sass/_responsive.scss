@@ -141,6 +141,12 @@
 		left: 0;
 		right: auto;
 	}
+	.search-results {
+		display: none;
+	}
+	.search-form.search-ext {
+		border-bottom: 1px solid #d9d9d9;
+	}
 } 
 @media (max-width: 767px) {
 	.page-title {

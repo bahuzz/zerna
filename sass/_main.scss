@@ -30,6 +30,7 @@ a {
 	&:hover {
 		text-decoration: none;
 	}
+
 }
 .fl {
 	float: left;
@@ -104,7 +105,7 @@ $green: #00ac00;
 	@include background-clip(padding-box);
 	background-color: #fff;
 	@include box-shadow(3px 4px 9px rgba(0,0,0,.4));
-	z-index: 100;
+	z-index: 102;
 	padding: 15px 20px;
 	display: none;
 }
@@ -126,6 +127,12 @@ $green: #00ac00;
 	color: #FFF;
 	position: relative;
 	top: 14px;
+	&:visited {
+		color: #FFF;
+	}
+	&:active {
+		color: #FFF;
+	}
 }
 .logo-block {
 	padding-top: 17px;
@@ -360,6 +367,7 @@ $green: #00ac00;
 }
 .product-credits {
 	display: block;
+	color: #7c7c7c;
 	span {
 		display: inline-block;
 	}
@@ -698,7 +706,7 @@ $green: #00ac00;
 		a {
 			color: #353535;
 			&:hover {
-				text-decoration: underline;
+				color: #009DA9;
 			}
 		}
 		span {
