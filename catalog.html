@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Zerna</title>
+	<title>Каталог - Zerna</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" media="screen" href="css/bootstrap.css" >
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
@@ -306,6 +306,13 @@
 			</nav>
 		</header><!-- header -->
 
+		<ol class="breadcrumb">
+		  <li><a href="#">Главная</a></li>
+		  <li><a href="#">Книги</a></li>
+		  <li><a href="#">Азы православия</a></li>
+		  <li>Посты  праздники</li>
+		</ol>      
+		                                                   
 		<div class="wrapper">
 			<div class="content">
 				<div class="main-slider">
@@ -325,12 +332,74 @@
 					</ul>
 				</div><!-- main-slider -->
 
-				<div class="page-title">Новинки недели</div><!-- page-title -->
+				<div class="cat-top">
+					<span class="cat-title">Азы православия</span>
+					<span class="finded hidden-xs">Найдено 439 товаров</span>
+				</div><!-- cat-top -->
 
-				<div class="topslider">
-						<ul class="product-slider">
-				  <li>
-				  	<div class="product-block">
+				<div class="tags hidden-xs">
+					<a href="#">Все рубрики</a>     
+					<a href="#">Беседы с духовником </a>     
+					<a href="#">Грехи и добродетели </a>     
+					<a href="#">Исповедь. Причастие. Крещение. Венчание </a>     
+					<a href="#">Молитва и основы веры    </a> 
+					<a href="#">О богослужении и церковной жизни   </a>   
+					<a href="#">Поминовение. Загробная жизнь     </a> 
+					<a href="#">Посты и праздники     </a> 
+					<a href="#">Христианское отношение к миру </a>     
+					<a href="#">Церковь и общество</a> 
+				</div><!-- tags -->
+
+				<div class="tags-mobile visible-xs">
+					<div class="tags-mobile-label">
+						Выберите рубрику:
+					</div><!-- tags-mobile-label -->
+					<div class="tag-select">
+						<select class="custom-select ">
+							<option>Все рубрики</option>     
+							<option>Беседы с духовником </option>     
+							<option>Грехи и добродетели </option>     
+							<option>Исповедь. Причастие. Крещение. Венчание </option>     
+							<option>Молитва и основы веры    </option> 
+							<option>О богослужении и церковной жизни   </option>   
+							<option>Поминовение. Загробная жизнь     </option> 
+							<option>Посты и праздники     </option> 
+							<option>Христианское отношение к миру </option>     
+							<option>Церковь и общество</option> 
+						</select>
+					</div><!-- tag-select -->
+				</div><!-- tags-mobile -->
+
+				<div class="sort clearfix">
+					<div class="fl">
+						<span class="sort-on-label">сортировать по:</span>
+					   <span class="sort-on hidden-xs">
+					   		<span class="sort-item ">дате </span>     
+						    <span class="sort-item active">по алфавиту</span>     
+						    <span class="sort-item ">по цене  </span>     
+						    <span class="sort-item ">по популярности</span>
+					   </span>
+
+					   <div class="sort-select visible-xs">
+					   		<select class="custom-select">
+						   		<option>дате </option>     
+							    <option>по алфавиту </option>     
+							    <option>по цене  </option>     
+							    <option>по популярности</option>
+							</select>
+					   </div><!-- sort-select -->
+					</div><!-- fl -->
+
+					<div class="fr">
+						 <span class="checkbox">
+						 	<input type="checkbox" id="ch1">
+					    	<label for="ch1">Только товары в наличии</label>
+					    </span>
+					</div><!-- fr -->
+				</div><!-- sort -->
+
+				<div class="product-wrapper clearfix">
+					<div class="product-block" id="product1">
 								<a href="#">
 									<span class="product-img">
 										<img src="uploads/images/book1.png" alt="" />
@@ -348,10 +417,8 @@
 									<span class="p-com"><i class="icon com-icon"></i>23</span>
 								</div><!-- product-credits -->
 							</div><!-- product-block -->
-				  </li>
 
-				   <li>
-				  	<div class="product-block">
+					<div class="product-block">
 								<a href="#">
 									<span class="product-img">
 										<img src="uploads/images/book1.png" alt="" />
@@ -362,16 +429,15 @@
 								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
 								<span class="product-price-wrapper">
 									<span class="product-price">300 р.</span>
+									<span class="product-price-last">Осталось: 3</span>
 								</span>
 								<div class="product-credits">
 									<span class="p-like"><i class="icon like-icon"></i>410</span>
 									<span class="p-com"><i class="icon com-icon"></i>23</span>
 								</div><!-- product-credits -->
 							</div><!-- product-block -->
-				  </li>
 
-				   <li>
-				  	<div class="product-block">
+					<div class="product-block">
 								<a href="#">
 									<span class="product-img">
 										<img src="uploads/images/book1.png" alt="" />
@@ -382,16 +448,15 @@
 								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
 								<span class="product-price-wrapper">
 									<span class="product-price">300 р.</span>
+									<span class="product-price-last">Осталось: 3</span>
 								</span>
 								<div class="product-credits">
 									<span class="p-like"><i class="icon like-icon"></i>410</span>
 									<span class="p-com"><i class="icon com-icon"></i>23</span>
 								</div><!-- product-credits -->
 							</div><!-- product-block -->
-				  </li>
 
-				   <li>
-				  	<div class="product-block">
+					<div class="product-block">
 								<a href="#">
 									<span class="product-img">
 										<img src="uploads/images/book1.png" alt="" />
@@ -402,16 +467,15 @@
 								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
 								<span class="product-price-wrapper">
 									<span class="product-price">300 р.</span>
+									<span class="product-price-last">Осталось: 3</span>
 								</span>
 								<div class="product-credits">
 									<span class="p-like"><i class="icon like-icon"></i>410</span>
 									<span class="p-com"><i class="icon com-icon"></i>23</span>
 								</div><!-- product-credits -->
 							</div><!-- product-block -->
-				  </li>
 
-				   <li>
-				  	<div class="product-block">
+					<div class="product-block">
 								<a href="#">
 									<span class="product-img">
 										<img src="uploads/images/book1.png" alt="" />
@@ -422,16 +486,15 @@
 								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
 								<span class="product-price-wrapper">
 									<span class="product-price">300 р.</span>
+									<span class="product-price-last">Осталось: 3</span>
 								</span>
 								<div class="product-credits">
 									<span class="p-like"><i class="icon like-icon"></i>410</span>
 									<span class="p-com"><i class="icon com-icon"></i>23</span>
 								</div><!-- product-credits -->
-							</div><!-- product-block -->
-				  </li>
+					</div><!-- product-block -->
 
-				   <li>
-				  	<div class="product-block">
+					<div class="product-block">
 								<a href="#">
 									<span class="product-img">
 										<img src="uploads/images/book1.png" alt="" />
@@ -442,16 +505,15 @@
 								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
 								<span class="product-price-wrapper">
 									<span class="product-price">300 р.</span>
+									<span class="product-price-last">Осталось: 3</span>
 								</span>
 								<div class="product-credits">
 									<span class="p-like"><i class="icon like-icon"></i>410</span>
 									<span class="p-com"><i class="icon com-icon"></i>23</span>
 								</div><!-- product-credits -->
 							</div><!-- product-block -->
-				  </li>
 
-				   <li>
-				  	<div class="product-block">
+					<div class="product-block">
 								<a href="#">
 									<span class="product-img">
 										<img src="uploads/images/book1.png" alt="" />
@@ -462,16 +524,15 @@
 								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
 								<span class="product-price-wrapper">
 									<span class="product-price">300 р.</span>
+									<span class="product-price-last">Осталось: 3</span>
 								</span>
 								<div class="product-credits">
 									<span class="p-like"><i class="icon like-icon"></i>410</span>
 									<span class="p-com"><i class="icon com-icon"></i>23</span>
 								</div><!-- product-credits -->
 							</div><!-- product-block -->
-				  </li>
 
-				   <li>
-				  	<div class="product-block">
+					<div class="product-block">
 								<a href="#">
 									<span class="product-img">
 										<img src="uploads/images/book1.png" alt="" />
@@ -482,16 +543,15 @@
 								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
 								<span class="product-price-wrapper">
 									<span class="product-price">300 р.</span>
+									<span class="product-price-last">Осталось: 3</span>
 								</span>
 								<div class="product-credits">
 									<span class="p-like"><i class="icon like-icon"></i>410</span>
 									<span class="p-com"><i class="icon com-icon"></i>23</span>
 								</div><!-- product-credits -->
 							</div><!-- product-block -->
-				  </li>
 
-				   <li>
-				  	<div class="product-block">
+					<div class="product-block">
 								<a href="#">
 									<span class="product-img">
 										<img src="uploads/images/book1.png" alt="" />
@@ -502,16 +562,15 @@
 								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
 								<span class="product-price-wrapper">
 									<span class="product-price">300 р.</span>
+									<span class="product-price-last">Осталось: 3</span>
 								</span>
 								<div class="product-credits">
 									<span class="p-like"><i class="icon like-icon"></i>410</span>
 									<span class="p-com"><i class="icon com-icon"></i>23</span>
 								</div><!-- product-credits -->
 							</div><!-- product-block -->
-				  </li>
 
-				   <li>
-				  	<div class="product-block">
+					<div class="product-block">
 								<a href="#">
 									<span class="product-img">
 										<img src="uploads/images/book1.png" alt="" />
@@ -522,880 +581,122 @@
 								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
 								<span class="product-price-wrapper">
 									<span class="product-price">300 р.</span>
+									<span class="product-price-last">Осталось: 3</span>
 								</span>
 								<div class="product-credits">
 									<span class="p-like"><i class="icon like-icon"></i>410</span>
 									<span class="p-com"><i class="icon com-icon"></i>23</span>
 								</div><!-- product-credits -->
 							</div><!-- product-block -->
-				  </li>
 
+					<div class="product-block">
+								<a href="#">
+									<span class="product-img">
+										<img src="uploads/images/book1.png" alt="" />
+										<i class="zoom"></i>
+									</span><!-- product-img -->
+									<span class="product-title">“Мы брали благ” Автобиография</span>
+								</a>
+								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
+								<span class="product-price-wrapper">
+									<span class="product-price">300 р.</span>
+									<span class="product-price-last">Осталось: 3</span>
+								</span>
+								<div class="product-credits">
+									<span class="p-like"><i class="icon like-icon"></i>410</span>
+									<span class="p-com"><i class="icon com-icon"></i>23</span>
+								</div><!-- product-credits -->
+							</div><!-- product-block -->
+
+					<div class="product-block">
+								<a href="#">
+									<span class="product-img">
+										<img src="uploads/images/book1.png" alt="" />
+										<i class="zoom"></i>
+									</span><!-- product-img -->
+									<span class="product-title">“Мы брали благ” Автобиография</span>
+								</a>
+								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
+								<span class="product-price-wrapper">
+									<span class="product-price">300 р.</span>
+									<span class="product-price-last">Осталось: 3</span>
+								</span>
+								<div class="product-credits">
+									<span class="p-like"><i class="icon like-icon"></i>410</span>
+									<span class="p-com"><i class="icon com-icon"></i>23</span>
+								</div><!-- product-credits -->
+							</div><!-- product-block -->
+
+					<div class="product-block">
+								<a href="#">
+									<span class="product-img">
+										<img src="uploads/images/book1.png" alt="" />
+										<i class="zoom"></i>
+									</span><!-- product-img -->
+									<span class="product-title">“Мы брали благ” Автобиография</span>
+								</a>
+								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
+								<span class="product-price-wrapper">
+									<span class="product-price">300 р.</span>
+									<span class="product-price-last">Осталось: 3</span>
+								</span>
+								<div class="product-credits">
+									<span class="p-like"><i class="icon like-icon"></i>410</span>
+									<span class="p-com"><i class="icon com-icon"></i>23</span>
+								</div><!-- product-credits -->
+							</div><!-- product-block -->
+
+					<div class="product-block">
+								<a href="#">
+									<span class="product-img">
+										<img src="uploads/images/book1.png" alt="" />
+										<i class="zoom"></i>
+									</span><!-- product-img -->
+									<span class="product-title">“Мы брали благ” Автобиография</span>
+								</a>
+								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
+								<span class="product-price-wrapper">
+									<span class="product-price">300 р.</span>
+									<span class="product-price-last">Осталось: 3</span>
+								</span>
+								<div class="product-credits">
+									<span class="p-like"><i class="icon like-icon"></i>410</span>
+									<span class="p-com"><i class="icon com-icon"></i>23</span>
+								</div><!-- product-credits -->
+							</div><!-- product-block -->
+
+					<div class="product-block">
+								<a href="#">
+									<span class="product-img">
+										<img src="uploads/images/book1.png" alt="" />
+										<i class="zoom"></i>
+									</span><!-- product-img -->
+									<span class="product-title">“Мы брали благ” Автобиография</span>
+								</a>
+								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
+								<span class="product-price-wrapper">
+									<span class="product-price">300 р.</span>
+									<span class="product-price-last">Осталось: 3</span>
+								</span>
+								<div class="product-credits">
+									<span class="p-like"><i class="icon like-icon"></i>410</span>
+									<span class="p-com"><i class="icon com-icon"></i>23</span>
+								</div><!-- product-credits -->
+							</div><!-- product-block -->
+				</div><!-- product-wrapper -->
+
+				<ul class="pagination">
+				  <li><a href="#" hidden><i class="pg-arr-left"></i></a></li>
+				  <li class="active"><a href="#">1</a></li>
+				  <li><a href="#">2</a></li>
+				  <li><a href="#">3</a></li>
+				  <li><a href="#">4</a></li>
+				  <li><a href="#">5</a></li>
+				  <li><a href="#"><i class="pg-arr-right"></i></a></li>
 				</ul>
-				</div><!-- topslider -->
 
-				<div class="page-title"><span class="yelback">Желтые ценники (до -70%)</span></div><!-- page-title -->
-
-				<div class="slider clearfix">
-				<ul class="product-slider-yel">
-				  <li>
-				  	<div class="product-block product-block-yelprice">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/book1.png" alt="" />
-										<i class="zoom"></i>
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price-old">300 р.</span>
-									<span class="product-price yelback">300 р.</span>
-									<span class="product-price-last">Осталось: 3</span>
-								</span>
-								<div class="product-credits">
-									<span class="p-like"><i class="icon like-icon"></i>410</span>
-									<span class="p-com"><i class="icon com-icon"></i>23</span>
-								</div><!-- product-credits -->
-					</div><!-- product-block -->
-				  </li>
-
-				  <li>
-				  	<div class="product-block product-block-yelprice">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/book1.png" alt="" />
-										<i class="zoom"></i>
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price-old">300 р.</span>
-									<span class="product-price yelback">300 р.</span>
-									
-								</span>
-								<div class="product-credits">
-									<span class="p-like"><i class="icon like-icon"></i>410</span>
-									<span class="p-com"><i class="icon com-icon"></i>23</span>
-								</div><!-- product-credits -->
-							</div><!-- product-block -->
-				  </li>
-
-				   <li>
-				  	<div class="product-block product-block-yelprice">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/book1.png" alt="" />
-										<i class="zoom"></i>
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price-old">300 р.</span>
-									<span class="product-price yelback">300 р.</span>
-									<span class="product-price-last">Осталось: 3</span>
-								</span>
-								<div class="product-credits">
-									<span class="p-like"><i class="icon like-icon"></i>410</span>
-									<span class="p-com"><i class="icon com-icon"></i>23</span>
-								</div><!-- product-credits -->
-							</div><!-- product-block -->
-				  </li>
-
-				   <li>
-				  	<div class="product-block product-block-yelprice">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/book1.png" alt="" />
-										<i class="zoom"></i>
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price-old">300 р.</span>
-									<span class="product-price yelback">300 р.</span>
-									<span class="product-price-last">Осталось: 3</span>
-								</span>
-								<div class="product-credits">
-									<span class="p-like"><i class="icon like-icon"></i>410</span>
-									<span class="p-com"><i class="icon com-icon"></i>23</span>
-								</div><!-- product-credits -->
-							</div><!-- product-block -->
-				  </li>
-
-				   <li>
-				  	<div class="product-block product-block-yelprice">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/book1.png" alt="" />
-										<i class="zoom"></i>
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price-old">300 р.</span>
-									<span class="product-price yelback">300 р.</span>
-									<span class="product-price-last">Осталось: 3</span>
-								</span>
-								<div class="product-credits">
-									<span class="p-like"><i class="icon like-icon"></i>410</span>
-									<span class="p-com"><i class="icon com-icon"></i>23</span>
-								</div><!-- product-credits -->
-							</div><!-- product-block -->
-				  </li>
-
-				   <li>
-				  	<div class="product-block product-block-yelprice">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/book1.png" alt="" />
-										<i class="zoom"></i>
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price-old">300 р.</span>
-									<span class="product-price yelback">300 р.</span>
-									<span class="product-price-last">Осталось: 3</span>
-								</span>
-								<div class="product-credits">
-									<span class="p-like"><i class="icon like-icon"></i>410</span>
-									<span class="p-com"><i class="icon com-icon"></i>23</span>
-								</div><!-- product-credits -->
-							</div><!-- product-block -->
-				  </li>
-
-				   <li>
-				  	<div class="product-block product-block-yelprice">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/book1.png" alt="" />
-										<i class="zoom"></i>
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price-old">300 р.</span>
-									<span class="product-price yelback">300 р.</span>
-									<span class="product-price-last">Осталось: 3</span>
-								</span>
-								<div class="product-credits">
-									<span class="p-like"><i class="icon like-icon"></i>410</span>
-									<span class="p-com"><i class="icon com-icon"></i>23</span>
-								</div><!-- product-credits -->
-							</div><!-- product-block -->
-				  </li>
-				</ul>
-				</div><!-- slider clearfix -->
-
-				<div class="page-title">Рекомендации наших редакторов</div><!-- page-title -->
-
-				<div class="slider clearfix">
-					<ul class="product-slider-rec">
-				  <li>
-				  	<div class="product-block">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/book1.png" alt="" />
-										<div class="rec">
-											Рекомендуем
-										</div><!-- rec -->
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<i class="zoom"></i>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price">300 р.</span>
-									<span class="product-price-last">Осталось: 3</span>
-								</span>
-								<div class="product-credits">
-									<span class="p-like"><i class="icon like-icon"></i>410</span>
-									<span class="p-com"><i class="icon com-icon"></i>23</span>
-								</div><!-- product-credits -->
-					</div><!-- product-block -->
-				  </li>
-
-				  <li>
-				  	<div class="product-block">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/book1.png" alt="" />
-										<div class="rec">
-											Рекомендуем
-										</div><!-- rec -->
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<i class="zoom"></i>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price">300 р.</span>
-								</span>
-								<div class="product-credits">
-									<span class="p-like"><i class="icon like-icon"></i>410</span>
-									<span class="p-com"><i class="icon com-icon"></i>23</span>
-								</div><!-- product-credits -->
-					</div><!-- product-block -->
-				  </li>
-
-				   <li>
-				  	<div class="product-block">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/book1.png" alt="" />
-										<div class="rec">
-											Рекомендуем
-										</div><!-- rec -->
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<i class="zoom"></i>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price">300 р.</span>
-									<span class="product-price-last">Осталось: 3</span>
-								</span>
-								<div class="product-credits">
-									<span class="p-like"><i class="icon like-icon"></i>410</span>
-									<span class="p-com"><i class="icon com-icon"></i>23</span>
-								</div><!-- product-credits -->
-					</div><!-- product-block -->
-				  </li>
-
-				  <li>
-				  	<div class="product-block">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/book1.png" alt="" />
-										<div class="rec">
-											Рекомендуем
-										</div><!-- rec -->
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<i class="zoom"></i>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price">300 р.</span>
-								</span>
-								<div class="product-credits">
-									<span class="p-like"><i class="icon like-icon"></i>410</span>
-									<span class="p-com"><i class="icon com-icon"></i>23</span>
-								</div><!-- product-credits -->
-					</div><!-- product-block -->
-				  </li>
-
-				   <li>
-				  	<div class="product-block">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/book1.png" alt="" />
-										<div class="rec">
-											Рекомендуем
-										</div><!-- rec -->
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<i class="zoom"></i>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price">300 р.</span>
-									<span class="product-price-last">Осталось: 3</span>
-								</span>
-								<div class="product-credits">
-									<span class="p-like"><i class="icon like-icon"></i>410</span>
-									<span class="p-com"><i class="icon com-icon"></i>23</span>
-								</div><!-- product-credits -->
-					</div><!-- product-block -->
-				  </li>
-
-				  <li>
-				  	<div class="product-block">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/book1.png" alt="" />
-										<div class="rec">
-											Рекомендуем
-										</div><!-- rec -->
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<i class="zoom"></i>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price">300 р.</span>
-								</span>
-								<div class="product-credits">
-									<span class="p-like"><i class="icon like-icon"></i>410</span>
-									<span class="p-com"><i class="icon com-icon"></i>23</span>
-								</div><!-- product-credits -->
-					</div><!-- product-block -->
-				  </li>
-
-				   <li>
-				  	<div class="product-block">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/book1.png" alt="" />
-										<div class="rec">
-											Рекомендуем
-										</div><!-- rec -->
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<i class="zoom"></i>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price">300 р.</span>
-									<span class="product-price-last">Осталось: 3</span>
-								</span>
-								<div class="product-credits">
-									<span class="p-like"><i class="icon like-icon"></i>410</span>
-									<span class="p-com"><i class="icon com-icon"></i>23</span>
-								</div><!-- product-credits -->
-					</div><!-- product-block -->
-				  </li>
-
-				  <li>
-				  	<div class="product-block">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/book1.png" alt="" />
-										<div class="rec">
-											Рекомендуем
-										</div><!-- rec -->
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<i class="zoom"></i>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price">300 р.</span>
-								</span>
-								<div class="product-credits">
-									<span class="p-like"><i class="icon like-icon"></i>410</span>
-									<span class="p-com"><i class="icon com-icon"></i>23</span>
-								</div><!-- product-credits -->
-					</div><!-- product-block -->
-				  </li>
-				</ul>
-				</div><!-- slider -->
-
-				<div class="page-title">Топлист месяца</div><!-- page-title -->
-
-				<div class="toplist clearfix">
-					<div class="tb-wrapper">
-						<div class="toplist-block">
-							<div class="tb-num">
-								1
-							</div><!-- tb-num -->
-							<div class="tb-cont">
-								<a href="#">
-								<span class="tb-img">
-									<img src="uploads/images/top-book1.png" alt="" />
-								</span>
-								<span class="tb-title">Воскресшая песня</span>
-							</a>
-							<div class="tb-bot">
-								<div class="tb-author">
-									Иванов И.А.
-								</div><!-- tb-author -->
-
-								<div class="tb-price">
-									220 р.
-								</div><!-- tb-price -->
-							</div><!-- tb-bot -->
-							</div><!-- tb-cont -->
-						</div><!-- toplist-block -->
-					</div><!-- tb-wrapper -->
-
-					<div class="tb-wrapper">
-						<div class="toplist-block">
-							<div class="tb-num">
-								2
-							</div><!-- tb-num -->
-							<div class="tb-cont">
-								<a href="#">
-								<span class="tb-img">
-									<img src="uploads/images/top-book1.png" alt="" />
-								</span>
-								<span class="tb-title">Воскресшая песня</span>
-							</a>
-							<div class="tb-bot">
-								<div class="tb-author">
-									Иванов И.А.
-								</div><!-- tb-author -->
-
-								<div class="tb-price">
-									220 р.
-								</div><!-- tb-price -->
-							</div><!-- tb-bot -->
-							</div><!-- tb-cont -->
-						</div><!-- toplist-block -->
-					</div><!-- tb-wrapper -->
-
-					<div class="tb-wrapper">
-						<div class="toplist-block">
-							<div class="tb-num">
-								3
-							</div><!-- tb-num -->
-							<div class="tb-cont">
-								<a href="#">
-								<span class="tb-img">
-									<img src="uploads/images/top-book1.png" alt="" />
-								</span>
-								<span class="tb-title">Воскресшая песня</span>
-							</a>
-							<div class="tb-bot">
-								<div class="tb-author">
-									Иванов И.А.
-								</div><!-- tb-author -->
-
-								<div class="tb-price">
-									220 р.
-								</div><!-- tb-price -->
-							</div><!-- tb-bot -->
-							</div><!-- tb-cont -->
-						</div><!-- toplist-block -->
-					</div><!-- tb-wrapper -->
-
-					<div class="tb-wrapper">
-						<div class="toplist-block">
-							<div class="tb-num">
-								4
-							</div><!-- tb-num -->
-							<div class="tb-cont">
-								<a href="#">
-								<span class="tb-img">
-									<img src="uploads/images/top-book1.png" alt="" />
-								</span>
-								<span class="tb-title">Воскресшая песня</span>
-							</a>
-							<div class="tb-bot">
-								<div class="tb-author">
-									Иванов И.А.
-								</div><!-- tb-author -->
-
-								<div class="tb-price">
-									220 р.
-								</div><!-- tb-price -->
-							</div><!-- tb-bot -->
-							</div><!-- tb-cont -->
-						</div><!-- toplist-block -->
-					</div><!-- tb-wrapper -->
-
-					<div class="tb-wrapper">
-						<div class="toplist-block">
-							<div class="tb-num">
-								5
-							</div><!-- tb-num -->
-							<div class="tb-cont">
-								<a href="#">
-								<span class="tb-img">
-									<img src="uploads/images/top-book1.png" alt="" />
-								</span>
-								<span class="tb-title">Воскресшая песня</span>
-							</a>
-							<div class="tb-bot">
-								<div class="tb-author">
-									Иванов И.А.
-								</div><!-- tb-author -->
-
-								<div class="tb-price">
-									220 р.
-								</div><!-- tb-price -->
-							</div><!-- tb-bot -->
-							</div><!-- tb-cont -->
-						</div><!-- toplist-block -->
-					</div><!-- tb-wrapper -->
-
-					<div class="tb-wrapper">
-						<div class="toplist-block">
-							<div class="tb-num">
-								6
-							</div><!-- tb-num -->
-							<div class="tb-cont">
-								<a href="#">
-								<span class="tb-img">
-									<img src="uploads/images/top-book1.png" alt="" />
-								</span>
-								<span class="tb-title">Воскресшая песня</span>
-							</a>
-							<div class="tb-bot">
-								<div class="tb-author">
-									Иванов И.А.
-								</div><!-- tb-author -->
-
-								<div class="tb-price">
-									220 р.
-								</div><!-- tb-price -->
-							</div><!-- tb-bot -->
-							</div><!-- tb-cont -->
-						</div><!-- toplist-block -->
-					</div><!-- tb-wrapper -->
-
-					<div class="tb-wrapper">
-						<div class="toplist-block">
-							<div class="tb-num">
-								7
-							</div><!-- tb-num -->
-							<div class="tb-cont">
-								<a href="#">
-								<span class="tb-img">
-									<img src="uploads/images/top-book1.png" alt="" />
-								</span>
-								<span class="tb-title">Воскресшая песня</span>
-							</a>
-							<div class="tb-bot">
-								<div class="tb-author">
-									Иванов И.А.
-								</div><!-- tb-author -->
-
-								<div class="tb-price">
-									220 р.
-								</div><!-- tb-price -->
-							</div><!-- tb-bot -->
-							</div><!-- tb-cont -->
-						</div><!-- toplist-block -->
-					</div><!-- tb-wrapper -->
-
-					<div class="tb-wrapper">
-						<div class="toplist-block">
-							<div class="tb-num">
-								8
-							</div><!-- tb-num -->
-							<div class="tb-cont">
-								<a href="#">
-								<span class="tb-img">
-									<img src="uploads/images/top-book1.png" alt="" />
-								</span>
-								<span class="tb-title">Воскресшая песня</span>
-							</a>
-							<div class="tb-bot">
-								<div class="tb-author">
-									Иванов И.А.
-								</div><!-- tb-author -->
-
-								<div class="tb-price">
-									220 р.
-								</div><!-- tb-price -->
-							</div><!-- tb-bot -->
-							</div><!-- tb-cont -->
-						</div><!-- toplist-block -->
-					</div><!-- tb-wrapper -->
-
-					<div class="tb-wrapper">
-						<div class="toplist-block">
-							<div class="tb-num">
-								9
-							</div><!-- tb-num -->
-							<div class="tb-cont">
-								<a href="#">
-								<span class="tb-img">
-									<img src="uploads/images/top-book1.png" alt="" />
-								</span>
-								<span class="tb-title">Воскресшая песня</span>
-							</a>
-							<div class="tb-bot">
-								<div class="tb-author">
-									Иванов И.А.
-								</div><!-- tb-author -->
-
-								<div class="tb-price">
-									220 р.
-								</div><!-- tb-price -->
-							</div><!-- tb-bot -->
-							</div><!-- tb-cont -->
-						</div><!-- toplist-block -->
-					</div><!-- tb-wrapper -->
-
-					<div class="tb-wrapper">
-						<div class="toplist-block">
-							<div class="tb-num">
-								10
-							</div><!-- tb-num -->
-							<div class="tb-cont">
-								<a href="#">
-								<span class="tb-img">
-									<img src="uploads/images/top-book1.png" alt="" />
-								</span>
-								<span class="tb-title">Воскресшая песня</span>
-							</a>
-							<div class="tb-bot">
-								<div class="tb-author">
-									Иванов И.А.
-								</div><!-- tb-author -->
-
-								<div class="tb-price">
-									220 р.
-								</div><!-- tb-price -->
-							</div><!-- tb-bot -->
-							</div><!-- tb-cont -->
-						</div><!-- toplist-block -->
-					</div><!-- tb-wrapper -->
-				</div><!-- toplist -->
-
-				<div class="public-wrapper clearfix">
-					<div class="public">
-						<div class="public-title">Публикации</div>
-						<div class="ps-wrapper">
-							<ul class="public-slider">
-							<li>
-								<div class="public-date">
-									24 ОКТЯБРЯ 2015
-								</div><!-- public-date -->
-								<div class="h4"><a href="#">Что такое ГМО?</a></div>
-								<div class="public-cont">
-									<p>Разумеется,  меры, предпринимаемые  против потенциальной
-									опасности рекомбинантной продукции, должны быть разработаны
-									на базе совместной оценки научных данных как представителями
-									науки, так и представителями власти, а также общественности при
-									участии независимых экспертов. </p>
-									 
-									<p>Конечно же, как в любой дисциплине, и в данной области трудно
-									соотносить знания специалистов с общепринятым мнением, к тому
-									же односторонне направленным отечественными вакцинаторами –
-									«от прививки только польза».</p>
-
-									<a href="#">Читать далее...</a>
-								</div><!-- public-cont -->
-							</li>
-
-							<li>
-								<div class="public-date">
-									24 ОКТЯБРЯ 2015
-								</div><!-- public-date -->
-								<div class="h4"><a href="#">Что такое ГМО?</a></div>
-								<div class="public-cont">
-									<p>Разумеется,  меры, предпринимаемые  против потенциальной
-									опасности рекомбинантной продукции, должны быть разработаны
-									на базе совместной оценки научных данных как представителями
-									науки, так и представителями власти, а также общественности при
-									участии независимых экспертов. </p>
-									 
-									<p>Конечно же, как в любой дисциплине, и в данной области трудно
-									соотносить знания специалистов с общепринятым мнением, к тому
-									же односторонне направленным отечественными вакцинаторами –
-									«от прививки только польза».</p>
-
-									<a href="#">Читать далее...</a>
-								</div><!-- public-cont -->
-							</li>
-
-							<li>
-								<div class="public-date">
-									24 ОКТЯБРЯ 2015
-								</div><!-- public-date -->
-								<div class="h4"><a href="#">Что такое ГМО?</a></div>
-								<div class="public-cont">
-									<p>Разумеется,  меры, предпринимаемые  против потенциальной
-									опасности рекомбинантной продукции, должны быть разработаны
-									на базе совместной оценки научных данных как представителями
-									науки, так и представителями власти, а также общественности при
-									участии независимых экспертов. </p>
-									 
-									<p>Конечно же, как в любой дисциплине, и в данной области трудно
-									соотносить знания специалистов с общепринятым мнением, к тому
-									же односторонне направленным отечественными вакцинаторами –
-									«от прививки только польза».</p>
-
-									<a href="#">Читать далее...</a>
-								</div><!-- public-cont -->
-							</li>
-						</ul>
-						</div><!-- ps-wrapper -->
-					</div><!-- public -->
-
-					<div class="public news">
-						<div class="public-title">Новости</div>
-						<div class="ps-wrapper ns-wrapper">
-							<ul class="news-slider">
-							<li>
-								<div class="news-block">
-									<div class="news-img">
-										<img src="uploads/images/put.jpg" alt="" />
-									</div><!-- news-img -->
-									<div class="public-date">
-										24 ОКТЯБРЯ 2015
-									</div><!-- public-date -->
-									<div class="h4"><a href="#">Путин, Медведев и Собянин посетили ...</a></div>
-									<div class="public-cont">
-										<p>14 апреля. Москва. По информации chto-proishodit.ru торжественное ночное пасхальное богосл...</p>
-									</div><!-- public-cont -->
-								</div><!-- news-block -->
-
-								<div class="news-block">
-									<div class="news-img">
-										<img src="uploads/images/put.jpg" alt="" />
-									</div><!-- news-img -->
-									<div class="public-date">
-										24 ОКТЯБРЯ 2015
-									</div><!-- public-date -->
-									<div class="h4"><a href="#">Путин, Медведев и Собянин посетили ...</a></div>
-									<div class="public-cont">
-										<p>14 апреля. Москва. По информации chto-proishodit.ru торжественное ночное пасхальное богосл...</p>
-									</div><!-- public-cont -->
-								</div><!-- news-block -->
-							</li>
-
-							<li>
-								<div class="news-block">
-									<div class="news-img">
-										<img src="uploads/images/put.jpg" alt="" />
-									</div><!-- news-img -->
-									<div class="public-date">
-										24 ОКТЯБРЯ 2015
-									</div><!-- public-date -->
-									<div class="h4"><a href="#">Путин, Медведев и Собянин посетили ...</a></div>
-									<div class="public-cont">
-										<p>14 апреля. Москва. По информации chto-proishodit.ru торжественное ночное пасхальное богосл...</p>
-									</div><!-- public-cont -->
-								</div><!-- news-block -->
-
-								<div class="news-block">
-									<div class="news-img">
-										<img src="uploads/images/put.jpg" alt="" />
-									</div><!-- news-img -->
-									<div class="public-date">
-										24 ОКТЯБРЯ 2015
-									</div><!-- public-date -->
-									<div class="h4"><a href="#">Путин, Медведев и Собянин посетили ...</a></div>
-									<div class="public-cont">
-										<p>14 апреля. Москва. По информации chto-proishodit.ru торжественное ночное пасхальное богосл...</p>
-									</div><!-- public-cont -->
-								</div><!-- news-block -->
-							</li>
-						</ul>
-						</div><!-- ps-wrapper -->
-					</div><!-- public -->
-				</div><!-- public-wrapper -->
-
-				<div class="row banners">
-					<div class="col-md-6 col-sm-6">
-						<a href="#"><img class="img-responsive" src="uploads/images/banner1.jpg" alt="" /></a>
-					</div><!-- col-md-6 -->
-
-					<div class="col-md-6 col-sm-6">
-						<a href="#"><img class="img-responsive" src="uploads/images/banner2.jpg" alt="" /></a>
-					</div><!-- col-md-6 -->
-				</div><!-- row -->
-
-
-			<div class="h3">Новые поступления утвари, икон и дисков</div>
-
-			<div class="slider clearfix">
-				<ul class="utvar-slider">
-				  <li>
-				  	<div class="product-block">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/utvar1.png" alt="" />
-										
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<i class="zoom"></i>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price">300 р.</span>
-									<span class="product-price-last">Осталось: 3</span>
-								</span>
-								
-					</div><!-- product-block -->
-				  </li>
-
-				   <li>
-				  	<div class="product-block">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/utvar2.png" alt="" />
-										
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<i class="zoom"></i>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price">300 р.</span>
-									
-								</span>
-								
-					</div><!-- product-block -->
-				  </li>
-
-				   <li>
-				  	<div class="product-block">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/utvar3.png" alt="" />
-										
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<i class="zoom"></i>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price">300 р.</span>
-									
-								</span>
-								
-					</div><!-- product-block -->
-				  </li>
-
-				   <li>
-				  	<div class="product-block">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/utvar4.png" alt="" />
-										
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<i class="zoom"></i>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price">300 р.</span>
-									
-								</span>
-								
-					</div><!-- product-block -->
-				  </li>
-
-				   <li>
-				  	<div class="product-block">
-								<a href="#">
-									<span class="product-img">
-										<img src="uploads/images/utvar5.png" alt="" />
-										
-									</span><!-- product-img -->
-									<span class="product-title">“Мы брали благ” Автобиография</span>
-								</a>
-								<i class="zoom"></i>
-								<span class="product-info">Иванов А. И. <br>Издательство “Москва”</span>
-								<span class="product-price-wrapper">
-									<span class="product-price">300 р.</span>
-									<span class="product-price-last">Осталось: 3</span>
-								</span>
-								
-					</div><!-- product-block -->
-				  </li>
-				 
-				</ul>
-				</div><!-- slider -->
-
-
-					<div class="breadcrumbs">
-						> <a href="#">Вся утварь</a> > <a href="#">Все иконы</a> > <a href="#">Все диски</a>
-					</div><!-- breadcrumbs -->
-
-					<div class="text-block main-text-block">
-						<h1>Православный ИНТЕРНЕТ-МАГАЗИН </h1>
+<div class="text-block main-text-block">
+<h1>Азы православия (заголовок SEO текста) </h1>
 
 <p>Мы — это коллектив православного издательства «Зёрна», избравшего своей целью нести людям слово Божие через книгу. Наше издательство было образовано в 1999 году в г. Рязани.</p>
 
@@ -1404,6 +705,7 @@
 <p>Интернет-магазин «Зёрна» является On-line продолжателем нашего магазина.</p>
 
 <a href="#">Подробнее о магазине </a>
+
 					</div><!--"text-block -->
 			</div><!-- content -->
 
@@ -1797,10 +1099,100 @@
 	    </div><!-- box-modal -->
 	</div><!--  modal  -->
 
+	<div style="display: none;">
+	 <div class="box-modal product-modal" id="productModal">
+	 		<div class="box-modal_close arcticmodal-close small-close">закрыть</div>
+			<div class="product-modal-block clearfix">
+				<div class="pmb-img">
+					<img src="uploads/images/skazki.jpg" alt="" />
+					<div class="rec">Рекомендуем</div><!-- rec -->
+				</div><!-- product-modal-block-img -->
+
+				<div class="pmb-content">
+					<div class="pmb-title">
+						Сказки для самых маленьких
+					</div><!-- pmb-title -->
+					
+					<div class="pmb-author">
+							<a href="#">Иванов И.А.</a>
+					</div><!-- pmb-author -->
+
+					<div class="pmb-price">
+						<span class="oldprice">350</span>
+						<span class="price yelback">300 р.</span>
+					</div><!-- pmb-price -->
+
+					<div class="pmb-text">
+						В роли деда Евсея — кукольных дел мастера,
+						рассказывающего детям сказки, — народный артист
+						России Александр Леньков. Это последняя творческая
+						работа замечательного  актёр. <br>
+						СПИСОК КОМПОЗИЦИЙ...
+					</div><!-- pmb-text -->
+
+					<div class="pmb-more">
+						<a href="#">Подробнее</a>
+					</div><!-- pmb-more -->
+
+					<div class="pmb-info">
+						<span class="p-add"><i class="icon p-icon"></i>Отложить товар</span>
+						<span class="p-like"><i class="icon like-icon"></i>410</span>
+					</div><!-- pmb-info -->
+				</div><!-- pmb-content -->
+			</div><!-- product-modal-block -->
+
+			<div class="pmb-other">
+					<div class="pmb-other-title">
+						Люди также интересуются:
+					</div><!-- pmb-other-title -->
+
+					<div class="pmb-other-wrapper clearfix">
+						<ul>
+							<li>
+								<a href="#">
+									<img src="uploads/images/pmbo1.png" alt="" />
+									<span>Воскресшая песня</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<img src="uploads/images/pmbo2.png" alt="" />
+									<span>Дитя небесного града</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<img src="uploads/images/pmbo3.png" alt="" />
+									<span>Не могу не говорить о Христе</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<img src="uploads/images/pmbo4.png" alt="" />
+									<span>Молитвослов</span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#">
+									<img src="uploads/images/pmbo5.png" alt="" />
+									<span>Лев старйа Герасима</span>
+								</a>
+							</li>
+						</ul>
+					</div><!-- pmb-other-wrapper -->
+				</div><!-- pmb-other -->
+	    </div><!-- box-modal -->
+	</div><!--  modal  -->
+
 </body>
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.bxslider.min.js"></script>
 	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="js/jquery.arcticmodal-0.3.min.js"></script>
+	<script src="js/jquery.selectbox.js"></script>
 	<script src="js/app.js"></script>
 </html>

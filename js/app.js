@@ -63,5 +63,12 @@ $(document).ready(function() {
 	   // $('#toDelivery').arcticmodal();
 	   // $('#toEdit').arcticmodal();
 	   // $('#productAdded').arcticmodal();
+	   $('#productModal').arcticmodal();
 
+	   $('.search-input').click(function(){
+		  $('.search-results').slideToggle();
+		  $('.search-form').toggleClass('search-ext');
+		});
+
+	   $(".custom-select").selectBox();
 });
