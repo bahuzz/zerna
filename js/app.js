@@ -45,6 +45,14 @@ $(document).ready(function() {
 	  slideMargin: 0,
 	  pager: false
 	});
+
+	$('.seen-slider').bxSlider({
+	  minSlides: 2,
+	  maxSlides: 6,
+	  slideWidth: 126,
+	  slideMargin: 10,
+	  pager: false
+	});
 	  $('.enter').click(function(){
 	    $(this).next('.private-dropdown').slideToggle();
 	    return false
@@ -71,4 +79,18 @@ $(document).ready(function() {
 		});
 
 	   $(".custom-select").selectBox();
+	   $(".book-pred-text").readmore({
+		    speed: 75,
+		    maxHeight: 84,
+		    moreLink: '<a href="#" class="bpt-ext">Развернуть</a>',
+		    lessLink: '<a href="#" class="bpt-ext">Свернуть</a>'
+		});
+
+	     $(".aa-text").readmore({
+		    speed: 75,
+		    maxHeight: 86,
+		    moreLink: '<a href="#" class="bpt-ext">Развернуть</a>',
+		    lessLink: '<a href="#" class="bpt-ext">Свернуть</a>'
+		});
+
 });
