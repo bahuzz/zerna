@@ -321,7 +321,17 @@
 
 				<div class="product-page clearfix">
 					<div class="pp-img">
-						<img src="uploads/images/pp-img.jpg" class="img-responsive" alt="" />
+							<ul class="pp-slider">
+							  <li><img src="uploads/images/pp-book.jpg" alt="" /></li>
+							  <li><img src="uploads/images/pp-book2.jpg" alt="" /></li>
+							  <li><img src="uploads/images/pp-book3.jpg" alt="" /></li>
+							</ul>
+
+							<div id="bx-pager">
+							  <a data-slide-index="0" href=""><img src="uploads/images/pp-pre1.jpg" /></a>
+							  <a data-slide-index="1" href=""><img src="uploads/images/pp-pre2.jpg" /></a>
+							  <a data-slide-index="2" href=""><img src="uploads/images/pp-pre3.jpg" /></a>
+							</div>
 					</div><!-- pp-img -->
 
 					<div class="pp-content">
@@ -384,7 +394,19 @@
 
 						<div class="offer-btn-wrapper">
 							<a href="#" class="offer-btn"><i class="oneclick-icon"></i>Заказать в один клик</a>
+
+							<div class="box-modal r20 one-offer">
+							<div class="textarea-label">
+								Чтобы заказать товар, напишите, как вас зовут и как с вами связаться
+							</div><!-- textarea-label -->
+							<textarea class="textarea"></textarea>
+							<div class="form-bot tac">
+									<button class="btn red-btn big-btn">Отправить</button><br><br>
+							</div><!-- form-bot -->
+						    </div><!-- box-modal -->
 						</div><!-- offer-btn-wrapper -->
+
+						 
 						
 					</div><!-- pp-content -->
 				</div><!-- product-page -->
@@ -1371,50 +1393,23 @@
 	</div><!--  modal  -->
 
 	<div style="display: none;">
-	 <div class="box-modal product-modal" id="productModa">
+	 <div class="box-modal product-modal" id="productAdd">
 	 		<div class="box-modal_close arcticmodal-close small-close">закрыть</div>
-			<div class="product-modal-block clearfix">
-				<div class="pmb-img">
-					<img src="uploads/images/skazki.jpg" alt="" />
-					<div class="rec">Рекомендуем</div><!-- rec -->
-				</div><!-- product-modal-block-img -->
+			<div class="prod-suc-add">
+				<div class="success-add">
+				Товар добавлен в корзину. 
+				Всего товаров в корзине: 3
+			</div><!-- success-add -->
+			</div><!-- prosucadd -->
 
-				<div class="pmb-content">
-					<div class="pmb-title">
-						Сказки для самых маленьких
-					</div><!-- pmb-title -->
-					
-					<div class="pmb-author">
-							<a href="#">Иванов И.А.</a>
-					</div><!-- pmb-author -->
-
-					<div class="pmb-price">
-						<span class="oldprice">350</span>
-						<span class="price yelback">300 р.</span>
-					</div><!-- pmb-price -->
-
-					<div class="pmb-text">
-						В роли деда Евсея — кукольных дел мастера,
-						рассказывающего детям сказки, — народный артист
-						России Александр Леньков. Это последняя творческая
-						работа замечательного  актёр. <br>
-						СПИСОК КОМПОЗИЦИЙ...
-					</div><!-- pmb-text -->
-
-					<div class="pmb-more">
-						<a href="#">Подробнее</a>
-					</div><!-- pmb-more -->
-
-					<div class="pmb-info">
-						<span class="p-add"><i class="icon p-icon"></i>Отложить товар</span>
-						<span class="p-like"><i class="icon like-icon"></i>410</span>
-					</div><!-- pmb-info -->
-				</div><!-- pmb-content -->
-			</div><!-- product-modal-block -->
+			<div class="psa-btns bb">
+				<a href="#" class="btn red-btn big-btn">Перейти к оформлению</a>
+				<a href="#" class="">Вернуться в каталог <i class="back-arr"></i></a>
+			</div><!-- psa-btns -->
 
 			<div class="pmb-other">
 					<div class="pmb-other-title">
-						Люди также интересуются:
+						С этим товаром покупают:
 					</div><!-- pmb-other-title -->
 
 					<div class="pmb-other-wrapper clearfix">

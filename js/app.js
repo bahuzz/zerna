@@ -69,9 +69,9 @@ $(document).ready(function() {
 	   // $('#authSuccessModal').arcticmodal();
 	   // $('#toOffer').arcticmodal();
 	   // $('#toDelivery').arcticmodal();
-	   // $('#toEdit').arcticmodal();
+	    //$('#toEdit').arcticmodal();
 	   // $('#productAdded').arcticmodal();
-	   $('#productModal').arcticmodal();
+	   $('#productAdd').arcticmodal();
 
 	   $('.search-input').click(function(){
 		  $('.search-results').slideToggle();
@@ -92,5 +92,16 @@ $(document).ready(function() {
 		    moreLink: '<a href="#" class="bpt-ext">Развернуть</a>',
 		    lessLink: '<a href="#" class="bpt-ext">Свернуть</a>'
 		});
+
+	     $('.pp-slider').bxSlider({
+		  pagerCustom: '#bx-pager',
+		  controls: false,
+		  mode: 'fade'
+		});
+
+	      $('.offer-btn').click(function(){
+	    $('.one-offer').slideToggle();
+	    return false
+	  });
 
 });

@@ -311,7 +311,13 @@
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	
+	.pp-img {
+		.bx-wrapper {
+			float: left;
+			width: 72%;
+			margin-bottom: 30px;
+		}
+	}
 } 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (max-width: 479px) {
@@ -414,5 +420,18 @@
 	}
 	.page-title-h1 {
 		font-size: 30px;
+	}
+	.prod-suc-add {
+		max-width: 300px;
+		font-size: 20px;
+	}
+	.psa-btns {
+		a {
+			display: block;
+			margin-bottom: 15px;
+			margin-top: 15px;
+			font-size: 15px;
+			
+		}
 	}
 }
