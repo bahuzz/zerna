@@ -104,4 +104,16 @@ $(document).ready(function() {
 	    return false
 	  });
 
+	  	$('.seen-slider-wide').bxSlider({
+		  minSlides: 2,
+		  maxSlides: 8,
+		  slideWidth: 125,
+		  slideMargin: 5,
+		  pager: false
+		});
+
+		$('#clock').countdown('2020/10/10', function(event) {
+		   $(this).html(event.strftime('%H:%M:%S'));
+		 });
+
 });
