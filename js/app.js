@@ -58,6 +58,11 @@ $(document).ready(function() {
 	    return false
 	  });
 
+	   $('.p-add').click(function(){
+	    $('.p-add-done').removeClass('p-add-done');
+	    $(this).addClass('p-add-done');
+	  });
+
 	 $('.sr-inner').mCustomScrollbar();
 
 	   $('.menu-btn').click(function(){
@@ -70,7 +75,8 @@ $(document).ready(function() {
 	   // $('#toOffer').arcticmodal();
 	   // $('#toDelivery').arcticmodal();
 	    //$('#toEdit').arcticmodal();
-	   // $('#productAdded').arcticmodal();
+	    //$('#productAdded').arcticmodal();
+	    $('#productModal').arcticmodal();
 	   $('#productAdd').arcticmodal();
 
 	   $('.search-input').click(function(){

@@ -162,6 +162,7 @@
 		}
 	}
 } 
+ 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (max-width: 767px) {
 	.page-title {
@@ -207,6 +208,11 @@
 		width: 100%;
 		text-align: center;
 		a {
+			color: #2E2E2E;
+			font-size: 9px;
+			font-family: georgia;
+			text-transform: uppercase;
+			padding: 0 5px 0 3px;
 			&:first-child {
 				padding-left: 0;
 			}
@@ -238,12 +244,12 @@
 		}
 	}
 	.f-email {
-		width: 61%;
+		width: 60%;
 		float: left;
 		height: 45px;
 		line-height: 45px;
 		input {
-			width: 70%;
+			width: 68%;
 		}
 		.mail-icon {
 			@include s(fmail-icon-big);
@@ -512,10 +518,10 @@
 			margin-bottom: 15px;
 			margin-top: 15px;
 			font-size: 15px;
-			
 		}
 	}
 	.xs-wide-btn {
 		width: 100%;
+		
 	}
 }

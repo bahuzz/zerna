@@ -28,6 +28,7 @@ h3,.h3 {
 }
 a {
 	color: #009da9;
+	outline: none;
 	&:hover {
 		text-decoration: none;
 		color: #A90C00;
@@ -139,6 +140,10 @@ $green: #00ac00;
 	}
 	&:active {
 		color: #FFF;
+	}
+	&:focus {
+		text-decoration: none;
+		outline: none;
 	}
 }
 .logo-block {
@@ -322,9 +327,10 @@ $green: #00ac00;
 .product-title {
 	font-size: 17px;
 	display: block;
-	height: 50px;
+	height: 45px;
 	margin-bottom: 12px;
 	position: relative;
+	overflow: hidden;
 	&:after {
 		content: "";
 		display: block;
@@ -410,12 +416,14 @@ $green: #00ac00;
 	@include s(rec);
 	display: inline-block;
 	position: absolute;
-	left: 0;
-	top: 0;
+	left: -8px;
+	top: 30px;
 	color: #FFF;
 	font-family: georgia;
 	font-size: 10px;
 	text-transform: uppercase;
+	text-align: left;
+	padding-left: 3px;
 }
 ////////////////////////// toplist ////////////////////////////
 .tb-num {
@@ -715,10 +723,16 @@ $green: #00ac00;
 			&:hover {
 				color: #009DA9;
 			}
+			
 		}
 		span {
 			font-size: 11px;
 			color: #707070;
+		}
+		&.current {
+			a {
+				color: $red;
+			}
 		}
 	}
 }
@@ -1000,9 +1014,11 @@ $green: #00ac00;
 	cursor: pointer;
 	&:hover {
 		color: $red;
+		border-bottom: 1px dotted  $red;
 	}
 	&.active {
 		color: $red;
+		border-bottom: 1px dotted  $red;
 	}
 }
 .breadcrumb {
@@ -1095,11 +1111,22 @@ $green: #00ac00;
 		display: inline-block;
 		padding: 0 10px;
 		border-left: 1px solid #d9d9d9;
+		font-size: 12px;
+		color: #7C7C7C;
 		&:first-child {
 			border-left: none;
 			padding-left: 0;
 		}
 	}
+	.p-add-done {
+	display: none !important;
+	
+}
+}
+
+.p-add {
+	cursor: pointer;
+	border-left: none !important;
 }
 .pmb-img {
 	float: left;
@@ -1148,6 +1175,7 @@ $green: #00ac00;
 }
 .pmb-text {
 	margin-bottom: 10px;
+	font-size: 13px;
 }
 .pmb-more {
 	font-size: 17px;
@@ -1840,7 +1868,7 @@ input[type="radio"]:checked + label::before {
 	font-family: georgia;
 	margin-bottom: 40px;
 }
-.lock-icon {
+.locker-icon {
 	display: inline-block;
 	@include s(lock-icon);
 }
