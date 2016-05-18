@@ -76,7 +76,7 @@ $(document).ready(function() {
 	   // $('#toDelivery').arcticmodal();
 	    //$('#toEdit').arcticmodal();
 	    //$('#productAdded').arcticmodal();
-	    $('#productModal').arcticmodal();
+	   // $('#productModal').arcticmodal();
 	   $('#productAdd').arcticmodal();
 
 	   $('.search-input').click(function(){
