@@ -407,6 +407,44 @@
 	.autor-img {
 		margin-right: 10px;
 	}
+	.pp-slider {
+		li {
+			width: 194px !important;
+			
+		}
+	}
+	.pp-img {
+		position: relative;
+		#bx-pager {
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 106px;
+		}
+	}
+	.book-art {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.pp-content {
+		position: relative;
+		overflow: hidden;
+		padding-top: 25px;
+	}
+	.book-kol-block {
+		margin-bottom: 20px;
+	
+	}
+	.offer-btn {
+		float: right;
+	}
+	.offer-btn-wrapper {
+		.pmb-info {
+			margin-top: 15px;
+			float: left;
+		}
+	}
 } 
 
 
@@ -527,5 +565,14 @@
 	.xs-wide-btn {
 		width: 100%;
 		
+	}
+	.offer-btn-wrapper {
+		.pmb-info {
+			margin-top: 15px;
+			float: none;
+		}
+	}
+	.offer-btn {
+		float: left;
 	}
 }

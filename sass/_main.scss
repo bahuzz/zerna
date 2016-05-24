@@ -1329,6 +1329,14 @@ input[type="radio"]:checked + label::before {
 		font-size: 11px;
 		padding-right: 12px;
 	}
+		span {
+			float: left;
+			margin: 0 1px;
+		}
+		input {
+			float: left;
+			margin: 0 1px;
+		}
 } 
 .dost {
 	color: #707070;
@@ -1350,11 +1358,13 @@ input[type="radio"]:checked + label::before {
 	line-height: 25px;
 	width: 48px;
 	text-align: center;
-	position: relative;
-	top: -2px;
+
 }
 .book-radio {
 	margin-bottom: 20px;
+	li {
+		line-height: 1.5em;
+	}
 }
 .bb-price {
 	float: left;
@@ -1550,6 +1560,9 @@ input[type="radio"]:checked + label::before {
 	}
 }
 .pp-slider {
+	.rec {
+		left: 1px;
+	}
 	li img {
 		border: 1px solid #E0E0E0;
 	}
@@ -1583,17 +1596,25 @@ input[type="radio"]:checked + label::before {
 .one-offer {
 	display: none;
 	position: absolute;
-	left: 0;
+	left: -30px;
 	top: 60px;
 	z-index: 102;
 	max-width: 284px;
 	min-width: 284px;
 	font-size: 11px;
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 00px;
 	.textarea-label {
 		font-size: 11px;
+		line-height: 1.5em;
 	}
 	.big-btn {
 		font-size: 15px;
+	}
+	.form-bot {
+		margin-bottom: 0;
 	}
 }
 .offer-btn-wrapper {
