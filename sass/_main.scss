@@ -1954,3 +1954,24 @@ input[type="radio"]:checked + label::before {
 		margin-bottom: 0;
 	}
 }
+/////////////////////// reg /////////////////////////
+.reg-btn {
+	float: left;
+	margin-right: 23px;
+}
+.reg-mess {
+	margin-left: 215px;
+	p {
+		margin-bottom: 10px;
+	}
+}
+.descr-text {
+	margin-bottom: 25px;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-family: georgia;
+}
+.reg-check {
+	position: relative;
+	top: 10px;
+}

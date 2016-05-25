@@ -733,6 +733,15 @@ input[type="radio"]:checked + label::before { content: ""; display: inline-block
 .fullnews { padding-bottom: 20px; margin-bottom: 20px; }
 .fullnews p { margin-bottom: 0; }
 
+.reg-btn { float: left; margin-right: 23px; }
+
+.reg-mess { margin-left: 215px; }
+.reg-mess p { margin-bottom: 10px; }
+
+.descr-text { margin-bottom: 25px; font-size: 15px; text-transform: uppercase; font-family: georgia; }
+
+.reg-check { position: relative; top: 10px; }
+
 /** BxSlider v4.1.2 - Fully loaded, responsive content slider http://bxslider.com  Written by: Steven Wanderski, 2014 http://stevenwanderski.com (while drinking Belgian ales and listening to jazz)  CEO and founder of bxCreative, LTD http://bxcreative.com */
 /** RESET AND LAYOUT
 ===================================*/
@@ -1569,7 +1578,9 @@ dark: -80px -56px, -100px -56px, -120px -56px, -140px -56px, -80px -128px, -100p
   .pp-content { position: relative; overflow: hidden; padding-top: 25px; }
   .book-kol-block { margin-bottom: 20px; }
   .offer-btn { float: right; }
-  .offer-btn-wrapper .pmb-info { margin-top: 15px; float: left; } }
+  .offer-btn-wrapper .pmb-info { margin-top: 15px; float: left; }
+  .reg-mess { margin-left: 0; }
+  .reg-check { top: 0; } }
 @media (max-width: 479px) { .logo-block { width: 100px; padding-top: 10px; }
   .logo-descr { top: 0; }
   .search { bottom: auto; width: 80%; top: 70px; }
