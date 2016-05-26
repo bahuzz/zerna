@@ -4,7 +4,7 @@ h1 {
 	margin-bottom: 35px;
 	font-family: georgia,serif;
 }
-h2 {
+h2,.h2 {
 	font-size: 27px;
 	padding-bottom: 20px;
 	font-family: georgia,serif;
@@ -1000,11 +1000,11 @@ $green: #00ac00;
 			position: relative;
 			position: absolute;
 			left: 0;
-			top: 1px;
+			top: 2px;
 		}
 	input[type="checkbox"]:checked + label::before {
 		@include s(check-on);
-		top: -4px;
+		top: -3px;
 	}
 }
 .sort-item {
@@ -1974,4 +1974,41 @@ input[type="radio"]:checked + label::before {
 .reg-check {
 	position: relative;
 	top: 10px;
+}
+/////////////////////// search-results /////////////////////////
+.search-top {
+	margin-bottom: 40px;
+	span {
+		float: left;
+	}
+	.search-form {
+		float: left;
+		position: relative;
+		top: -6px;
+		margin-right: 20px;
+	}
+	.ttu {
+		font-size: 15px;
+		margin-right: 20px;
+	}
+	.checkbox {
+		float: right;
+		color: #9A9A9A;
+	}
+}
+.georgia {
+	font-family: georgia, serif;
+}
+.s-find {
+	color: #707070;
+}
+.series {
+	font-size: 17px;
+	margin-bottom: 40px;
+	li {
+		margin-bottom: 5px;
+	}
+}
+.sf-label {
+	margin-bottom: 15px;
 }

@@ -51,7 +51,7 @@ body { font: 12px arial, sans-serif; background: #FFF; color: #353535; }
 @font-face { font-family: 'intro_inlineregular'; src: url("../fonts/intro_inline-webfont.eot"); src: url("../fonts/intro_inline-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/intro_inline-webfont.woff2") format("woff2"), url("../fonts/intro_inline-webfont.woff") format("woff"), url("../fonts/intro_inline-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 h1 { font-size: 27px; margin-bottom: 35px; font-family: georgia,serif; }
 
-h2 { font-size: 27px; padding-bottom: 20px; font-family: georgia,serif; }
+h2, .h2 { font-size: 27px; padding-bottom: 20px; font-family: georgia,serif; }
 
 h3, .h3 { font-size: 27px; font-family: georgia,serif; }
 
@@ -387,8 +387,8 @@ p { margin-bottom: 15px; line-height: 1.4em; font-size: 13px; }
 
 .checkbox { margin-top: 0; margin-bottom: 0; position: relative; }
 .checkbox input { display: none; }
-.checkbox input[type="checkbox"] + label::before { content: ""; display: inline-block; background: url('../img/icons-sa0617f03d0.png') 0 -281px no-repeat; width: 10px; height: 10px; margin-right: 9px; position: relative; position: absolute; left: 0; top: 1px; }
-.checkbox input[type="checkbox"]:checked + label::before { background: url('../img/icons-sa0617f03d0.png') 0 -256px no-repeat; width: 12px; height: 15px; top: -4px; }
+.checkbox input[type="checkbox"] + label::before { content: ""; display: inline-block; background: url('../img/icons-sa0617f03d0.png') 0 -281px no-repeat; width: 10px; height: 10px; margin-right: 9px; position: relative; position: absolute; left: 0; top: 2px; }
+.checkbox input[type="checkbox"]:checked + label::before { background: url('../img/icons-sa0617f03d0.png') 0 -256px no-repeat; width: 12px; height: 15px; top: -3px; }
 
 .sort-item { margin-left: 15px; color: #3A3A3A; border-bottom: 1px dotted #3A3A3A; cursor: pointer; }
 .sort-item:hover { color: #a90c00; border-bottom: 1px dotted #a90c00; }
@@ -741,6 +741,21 @@ input[type="radio"]:checked + label::before { content: ""; display: inline-block
 .descr-text { margin-bottom: 25px; font-size: 15px; text-transform: uppercase; font-family: georgia; }
 
 .reg-check { position: relative; top: 10px; }
+
+.search-top { margin-bottom: 40px; }
+.search-top span { float: left; }
+.search-top .search-form { float: left; position: relative; top: -6px; margin-right: 20px; }
+.search-top .ttu { font-size: 15px; margin-right: 20px; }
+.search-top .checkbox { float: right; color: #9A9A9A; }
+
+.georgia { font-family: georgia, serif; }
+
+.s-find { color: #707070; }
+
+.series { font-size: 17px; margin-bottom: 40px; }
+.series li { margin-bottom: 5px; }
+
+.sf-label { margin-bottom: 15px; }
 
 /** BxSlider v4.1.2 - Fully loaded, responsive content slider http://bxslider.com  Written by: Steven Wanderski, 2014 http://stevenwanderski.com (while drinking Belgian ales and listening to jazz)  CEO and founder of bxCreative, LTD http://bxcreative.com */
 /** RESET AND LAYOUT
@@ -1580,7 +1595,9 @@ dark: -80px -56px, -100px -56px, -120px -56px, -140px -56px, -80px -128px, -100p
   .offer-btn { float: right; }
   .offer-btn-wrapper .pmb-info { margin-top: 15px; float: left; }
   .reg-mess { margin-left: 0; }
-  .reg-check { top: 0; } }
+  .reg-check { top: 0; }
+  .s-find { font-size: 11px; }
+  .search-top .checkbox { font-size: 11px; } }
 @media (max-width: 479px) { .logo-block { width: 100px; padding-top: 10px; }
   .logo-descr { top: 0; }
   .search { bottom: auto; width: 80%; top: 70px; }
