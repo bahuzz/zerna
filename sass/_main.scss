@@ -984,6 +984,7 @@ $green: #00ac00;
 	padding-bottom: 5px;
 	border: 4px solid #dfe0de;
 	margin-bottom: 30px;
+	min-height: 40  px;
 }
 .checkbox {
 	margin-top: 0;
@@ -2011,4 +2012,160 @@ input[type="radio"]:checked + label::before {
 }
 .sf-label {
 	margin-bottom: 15px;
+}
+.s-error-block {
+	background: #FFF8EC;
+	text-align: center;
+	padding: 48px;
+	margin-bottom: 40px;
+	i {
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+	p {
+		text-transform: uppercase;
+		@extend .georgia
+	}
+}
+.less3 {
+	display: inline-block;
+	@include s(less3);
+}
+.not-found {
+	display: inline-block;
+	@include s(not-found);
+}
+//////////////// cabinet /////////////////
+.cab-h2 {
+	margin-top: 10px;	
+}
+.offer-block {
+	font-size: 13px;
+	border-bottom: 4px solid #797979;
+	position: relative;
+	margin-bottom: 30px;
+}
+.ob-arr {
+	@include s(ob-arr);
+	position: absolute;
+	bottom: -16px;
+	left: 50%;
+	margin-left: -18px;
+	cursor: pointer;
+}
+.ob-short {
+	padding: 15px;
+	background: #F8F8F8;
+	padding-bottom: 0;
+}
+.obs-inner {
+	border-bottom: 1px solid #E0E0E0;
+	padding-bottom: 15px;
+}
+.ob-lbl {
+	display: inline-block;
+	margin-right: 5px;
+	color: #797979;
+}
+.ob-full-list {
+	padding: 15px;
+	background: #F8F8F8;
+	li {
+		margin-bottom: 15px;
+		a {
+			margin-left: 10px;
+		}
+	}
+}
+.ob-short-num {
+	margin-right: 40px;
+}
+.ob-pro {
+	background: url(../img/icons/ob-pro.png) center top no-repeat;
+	padding-top: 30px;
+	font-size: 13px;
+	padding-bottom: 20px;
+}
+.ob-pro-img {
+	float: left;
+	width: 150px;
+	text-align: center;
+	margin-right: 25px;
+}
+.ob-pro-title {
+	position: relative;
+	display: inline-block;
+	font-size: 17px;
+	padding-bottom: 28px;
+	&:after {
+		content: "";
+		display: block;
+		width: 93px;
+		height: 1px;
+		background: #e0e0e0;
+		position: relative;
+		top: 12px;
+	}
+}
+.ob-pro-info {
+	float: left;
+	padding-top: 30px;
+}
+.ob-pro-kol {
+	float: left;
+	padding-top: 56px;
+}
+
+.ob-pro-info {
+	margin-right: 50px;
+}
+.ob-pro-kol {
+	
+}
+.ob-pro-price {
+	float: right;
+	padding-right: 10px;
+	padding-top: 56px;
+}
+.ob-bot {
+	padding-top: 12px;
+	padding-bottom: 14px;
+	border-top: 1px solid #e0e0e0;
+	margin: 0 15px;
+	position: relative;
+}
+.ob-button-close {
+	display: none;
+}
+.ob-button {
+	float: right;
+	color: #009DA9;
+	border-bottom: 1px dotted #009DA9;
+	position: relative;
+	margin-right: 14px;
+	cursor: pointer;
+	&:after {
+		content:"";
+		@include s(arr-bot);
+		display: inline-block;
+		position: absolute;
+		right: -13px;
+		top: 7px;
+	}
+}
+.ob-full {
+	display: none;
+}
+.shop-contact {
+	border-top: 1px solid #e0e0e0;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+.remove-modal {
+	position: absolute;
+	display: none;
+	top: 30px;
+	left: 10px;
+	width: 280px;
+	z-index: 10;
 }

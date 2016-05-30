@@ -106,9 +106,9 @@ $(document).ready(function() {
 		});
 
 	      $('.offer-btn').click(function(){
-	    $('.one-offer').slideToggle();
-	    return false
-	  });
+		    $('.one-offer').slideToggle();
+		    return false
+		  });
 
 	  	$('.seen-slider-wide').bxSlider({
 		  minSlides: 2,
@@ -122,4 +122,20 @@ $(document).ready(function() {
 		   $(this).html(event.strftime('%H:%M:%S'));
 		 });
 
+		 $('.ob-button-open').click(function(){
+		    $(this).parents('.offer-block').find('.ob-full').slideDown();
+		    $(this).hide();
+		    $(this).next('.ob-button-close').show();
+		  });
+
+		  $('.ob-button-close').click(function(){
+		    $(this).parents('.offer-block').find('.ob-full').slideUp();
+		    $(this).hide();
+		    $(this).prev('.ob-button-open').show();
+		  });
+
+		    $('.remove-btn').click(function(){
+		    $('.remove-modal').slideToggle();
+		    return false
+		  });
 });
