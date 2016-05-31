@@ -138,4 +138,8 @@ $(document).ready(function() {
 		    $('.remove-modal').slideToggle();
 		    return false
 		  });
+
+		    $('.close-product').click(function(){
+		    $(this).parent('.product-block').remove();
+		  });
 });

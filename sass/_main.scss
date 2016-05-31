@@ -316,6 +316,7 @@ $green: #00ac00;
 	padding-left: 10px;
 	padding-right: 10px;
 	float: left;
+	position: relative;
 }
 .product-img {
 	display: block;
@@ -2037,7 +2038,8 @@ input[type="radio"]:checked + label::before {
 }
 //////////////// cabinet /////////////////
 .cab-h2 {
-	margin-top: 10px;	
+	margin-top: 10px;
+	padding-bottom: 0;	
 }
 .offer-block {
 	font-size: 13px;
@@ -2168,4 +2170,35 @@ input[type="radio"]:checked + label::before {
 	left: 10px;
 	width: 280px;
 	z-index: 10;
+}
+///////////////// otz-date /////////////////
+.otz-date {
+	color: #707070;
+	margin-bottom: 10px;
+}
+.otz.bb {
+	padding-bottom: 20px;
+}
+.discount-list {
+	padding-left: 15px;
+	li {
+		margin-bottom: 10px;
+		list-style-type: disc;
+	}
+}
+.discount-wrapper {
+	font-size: 13px;
+}
+.subscribe-list {
+	li {
+		margin-bottom: 10px;
+	}
+}
+.close-product {
+	@include s(close-product);
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
 }
