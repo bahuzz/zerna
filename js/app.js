@@ -73,7 +73,8 @@ $(document).ready(function() {
 	   // $('#authModal').arcticmodal();
 	   // $('#authSuccessModal').arcticmodal();
 	   // $('#toOffer').arcticmodal();
-	   // $('#toDelivery').arcticmodal();
+	    // $('#toDelivery').arcticmodal();
+	    $('#regDelivery').arcticmodal();
 	    //$('#toEdit').arcticmodal();
 	    //$('#productAdded').arcticmodal();
 	    //$('#productModal').arcticmodal();

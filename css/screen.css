@@ -861,6 +861,12 @@ textarea { resize: none; }
 .cards { margin-bottom: 20px; }
 .cards img { margin-right: 20px; }
 
+.regd-modal { max-width: 844px; }
+
+.regd-modal-right { float: right; width: 29%; }
+
+.regd-modal-left { float: left; width: 68%; }
+
 /** BxSlider v4.1.2 - Fully loaded, responsive content slider http://bxslider.com  Written by: Steven Wanderski, 2014 http://stevenwanderski.com (while drinking Belgian ales and listening to jazz)  CEO and founder of bxCreative, LTD http://bxcreative.com */
 /** RESET AND LAYOUT
 ===================================*/
@@ -1721,7 +1727,9 @@ dark: -80px -56px, -100px -56px, -120px -56px, -140px -56px, -80px -128px, -100p
   .cab-h2 { font-size: 21px; }
   .cat-top { margin-bottom: 10px; }
   .reg-left { float: none; width: 100%; padding-left: 10px; padding-right: 10px; }
-  .reg-right { float: none; width: 100%; padding-left: 10px; padding-right: 10px; float: none; margin-bottom: 20px; } }
+  .reg-right { float: none; width: 100%; padding-left: 10px; padding-right: 10px; float: none; margin-bottom: 20px; }
+  .regd-modal-right { float: none; width: 100%; }
+  .regd-modal-left { float: none; width: 100%; } }
 @media (max-width: 479px) { .logo-block { width: 100px; padding-top: 10px; }
   .logo-descr { top: 0; }
   .search { bottom: auto; width: 80%; top: 70px; }
