@@ -521,6 +521,19 @@
 	.cat-top {
 		margin-bottom: 10px;
 	}
+	.reg-left {
+		float: none;
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		
+	}
+	.reg-right {float: none;
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;float: none;
+		margin-bottom: 20px;
+	}
 } 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -649,5 +662,28 @@
 	}
 	.offer-btn {
 		float: left;
+	}
+	.reg-field {
+		width: 100%;
+		float: none;
+	}
+	.reg-label {
+		width: 100%;
+		float: none;
+		text-align: left;
+	}
+	.radio-reg input[type="radio"] + label::before {
+		position: static;
+
+	}
+	.reg-left {
+		.tar {
+			text-align: left;
+		}
+	}
+	.cards {
+		img {
+			width: 16%;
+		}
 	}
 }

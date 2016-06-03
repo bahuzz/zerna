@@ -12,7 +12,12 @@
 	text-transform: none;
 	font-family: arial;
 }
-
+.custom-select2 {
+	height: 27px;
+	line-height: 24px;
+	font-size: 12px;
+	border: 1px solid #D7D7D7;
+}
 .selectBox-dropdown:focus,
 .selectBox-dropdown:focus .selectBox-arrow {
 	border-color: #444;
@@ -42,9 +47,15 @@
 	width: 48px;
 	height: 100%;
 	background: url(../img/icons/arr-select.png) 50% center no-repeat;
-	border-left: solid 1px #666;
 }
-
+.custom-select2 .selectBox-arrow {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 23px;
+	height: 100%;
+	background: url(../img/icons/sel-arr.png) 50% center no-repeat;
+}
 
 /* Dropdown menu */
 .selectBox-dropdown-menu {

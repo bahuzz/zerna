@@ -85,6 +85,7 @@ $(document).ready(function() {
 		});
 
 	   $(".custom-select").selectBox();
+	   $(".custom-select2").selectBox();
 	   $(".book-pred-text").readmore({
 		    speed: 75,
 		    maxHeight: 84,
