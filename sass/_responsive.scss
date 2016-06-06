@@ -542,6 +542,29 @@
 		float: none;
 		width: 100%;
 	}
+	  .subscribe-form-bottom {
+	  	padding: 0;
+	  	margin-bottom: 30px;
+	  	.f-email {
+	  		input {
+	  			width: 115px;
+	  		}
+	  	}
+	  }
+	.img-404 {
+		float: none;
+		padding-top: 100px;
+		padding-bottom: 50px;
+		width: 100%;
+	}
+	.content-404 {
+		margin-left: 0;
+		.cat-title {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
 } 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -693,5 +716,11 @@
 		img {
 			width: 16%;
 		}
+	}
+	.blue-btn {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+		width: 100%;
+		font-size: 14px;
 	}
 }
