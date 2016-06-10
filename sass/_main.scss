@@ -345,7 +345,7 @@ $green: #00ac00;
 .product-title {
 	font-size: 17px;
 	display: block;
-	height: 45px;
+	height: 43px;
 	margin-bottom: 12px;
 	position: relative;
 	overflow: hidden;
@@ -1520,7 +1520,7 @@ input[type="radio"]:checked + label::before {
 }
 .ao-left {
 	float: left;
-	width: 27.5%;
+	width: 40%;
 	.form-group {
 		margin-bottom: 25px;
 	}
@@ -1533,7 +1533,7 @@ input[type="radio"]:checked + label::before {
 		}
 	}
 	.ao-right {
-		width: 69.5%;
+		width: 56%;
 		float: right;
 		.form-control {
 			font-size: 13px;
@@ -1716,6 +1716,9 @@ input[type="radio"]:checked + label::before {
 	a {
 		color: #A4A4A4;
 		text-decoration: underline;
+		&:hover {
+			text-decoration: none;
+		}
 	}
 	i {
 		position: relative;
@@ -1874,7 +1877,7 @@ input[type="radio"]:checked + label::before {
 }
 .btn-wrp {
 	position: relative;
-	top: -22px;
+	top: -25px;
 	.red-btn {
 		margin-right: 20px;
 	}
@@ -1921,6 +1924,10 @@ input[type="radio"]:checked + label::before {
 .locker-icon {
 	display: inline-block;
 	@include s(lock-icon);
+}
+.biglock-icon {
+	display: inline-block;
+	@include s(big-lock);
 }
 .disc-icon {
 	display: inline-block;
@@ -2075,12 +2082,17 @@ input[type="radio"]:checked + label::before {
 	margin-bottom: 30px;
 }
 .ob-arr {
-	@include s(ob-arr);
+	@include s(ob-arr2);
 	position: absolute;
 	bottom: -16px;
 	left: 50%;
 	margin-left: -18px;
 	cursor: pointer;
+}
+.offer-block-open {
+	.ob-arr {
+	@include s(ob-arr);
+	}
 }
 .ob-short {
 	padding: 15px;
@@ -2436,4 +2448,7 @@ textarea {
 }
 .noborder {
 	border: none;
+}
+.reg-label .radio label {
+	font-weight: normal;
 }

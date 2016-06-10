@@ -161,6 +161,24 @@
 			width: 37%;
 		}
 	}
+	.bit-icon {
+		width: 40px;
+	}
+	.dis-icon {
+		position: relative;
+		left: 5px;
+	}
+	.shop-icon {
+		position: relative;
+		left: 5px;
+	}
+	.cart-in {
+		font-size: 21px;
+	}
+	.kol-minus, .kol-plus,.kol-input {
+		width: 35px;
+		height: 35px;
+	}
 } 
  
 //////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -345,11 +363,12 @@
 	.ct-col {
 		float: none;
 		margin-left: 115px;
-		width: 100%;
+		width: 60%;
 		margin-bottom: 20px;
 	}
 	.ct-col1 {
 		margin-left: 0;
+		width: 100%;
 	}
 	.cart-item-img {
 		width: 105px;
@@ -429,7 +448,7 @@
 	}
 	.pp-content {
 		position: relative;
-		overflow: hidden;
+		//overflow: hidden;
 		padding-top: 25px;
 	}
 	.book-kol-block {
@@ -564,6 +583,25 @@
 			top: 0;
 			left: 0;
 		}
+	}
+	.one-offer {
+		left: 0;
+		top: 88px;
+	}
+	.hello-user {
+		font-size: 21px;
+	}
+	.mess {
+		font-size: 21px;
+	}
+	.add-otz .form-group textarea.form-control {
+		height: 100px;
+	}
+	.cab-h2 {
+		padding-bottom: 10px;
+	}
+	.h2 {
+		font-size: 21px;
 	}
 } 
 
