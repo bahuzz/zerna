@@ -377,7 +377,8 @@ $green: #00ac00;
 }
 .product-info {
 	display: block;
-	height: 40px;
+	height: 35px;
+	overflow: hidden;
 }
 .like-icon {
 	@include s(like-icon);
@@ -1002,7 +1003,8 @@ $green: #00ac00;
 	padding-bottom: 5px;
 	border: 4px solid #dfe0de;
 	margin-bottom: 30px;
-	min-height: 40  px;
+	min-height: 40px;
+	
 }
 .checkbox {
 	margin-top: 0;
@@ -1024,6 +1026,17 @@ $green: #00ac00;
 	input[type="checkbox"]:checked + label::before {
 		@include s(check-on);
 		top: -3px;
+	}
+}
+.checkbox.check-mobile {
+	input[type="checkbox"] + label::before {
+			@include s(check-m);
+			top: -5px;
+			left: -15px;
+		}
+	input[type="checkbox"]:checked + label::before {
+		@include s(check-on-m);
+		top: -5px;
 	}
 }
 .sort-item {
@@ -1208,9 +1221,10 @@ $green: #00ac00;
 		padding-left: 9px;
 		padding-right: 9px;
 		height: 180px;
+		font-size: 17px;
 		span {
 			display: block;
-			overflow: hidden;
+			//overflow: hidden;
 			height: 55px;
 		}
 		img {
@@ -1241,6 +1255,12 @@ $green: #00ac00;
 .pp-img {
 	float: left;
 	width: 32.9%;
+	.bx-viewport {
+		overflow: visible !important;
+	}
+	.rec {
+		left: -9px !important;
+	}
 }
 .pp-content {
 	float: right;
@@ -1846,6 +1866,12 @@ input[type="radio"]:checked + label::before {
 		float: left;
 		margin-bottom: 5px;
 		margin-right: 5px;
+	}
+	.active {
+		a {
+			color: #C10E00;
+			border-bottom: none;
+		}
 	}
 	a {
 		font-size: 11px;
