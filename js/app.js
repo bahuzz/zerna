@@ -85,8 +85,8 @@ $(document).ready(function() {
 		  $('.search-form').toggleClass('search-ext');
 		});
 
-	   $(".custom-select").selectBox();
-	   $(".custom-select2").selectBox();
+	   $(".custom-select").styler();
+	   $(".custom-select2").styler();
 	   $(".book-pred-text").readmore({
 		    speed: 75,
 		    maxHeight: 84,
